@@ -1,9 +1,3 @@
-/* ================================================
-   Ingeniería de Sistemas - Universidad de la Amazonia
-   Hoja de estilos principal
-   ================================================ */
-
-/* ---------- Variables y reset ---------- */
 :root {
     --verde: #1b5e4a;
     --verde-oscuro: #103d30;
@@ -15,61 +9,49 @@
     --blanco: #ffffff;
     --sombra: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
     background-color: var(--fondo);
     color: var(--texto);
     line-height: 1.6;
 }
-
-/* ---------- Cabecera y menú ---------- */
 .cabecera {
     background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-claro));
     color: var(--blanco);
     padding: 40px 20px 0;
 }
-
 .cabecera__contenedor {
     max-width: 1100px;
     margin: 0 auto;
 }
-
 .cabecera__titulo {
     font-size: 2.6rem;
     letter-spacing: 1px;
 }
-
 .cabecera__titulo em {
     color: var(--dorado);
     font-style: normal;
 }
-
 .cabecera__subtitulo {
     margin-top: 6px;
     opacity: 0.9;
 }
-
 .menu {
     margin-top: 24px;
 }
-
 .menu__lista {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
-
 .menu__item {
     margin-right: 6px;
 }
-
 .menu__enlace {
     display: inline-block;
     padding: 12px 18px;
@@ -78,12 +60,9 @@ body {
     border-radius: 6px 6px 0 0;
     transition: background-color 0.25s ease;
 }
-
 .menu__enlace:hover {
     background-color: var(--verde-oscuro);
 }
-
-/* ---------- Portada ---------- */
 .portada {
     background: var(--verde-oscuro);
     color: var(--blanco);
@@ -92,14 +71,11 @@ body {
     padding: 50px 20px;
     text-align: center;
 }
-
 .portada__texto {
     font-size: 1.15rem;
     max-width: 720px;
     margin: 0 auto 26px;
 }
-
-/* ---------- Botones ---------- */
 .boton {
     display: inline-block;
     padding: 12px 26px;
@@ -108,32 +84,25 @@ body {
     font-weight: bold;
     transition: transform 0.2s ease, background-color 0.25s ease;
 }
-
 .boton:hover {
     transform: translateY(-2px);
 }
-
 .boton--primario {
     background-color: var(--dorado);
     color: var(--verde-oscuro);
 }
-
 .boton--claro {
     background-color: var(--blanco);
     color: var(--verde);
 }
-
-/* ---------- Estructura de secciones ---------- */
 .contenido {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px 40px;
 }
-
 .seccion {
     padding: 45px 0;
 }
-
 .seccion__titulo {
     font-size: 1.9rem;
     color: var(--verde);
@@ -141,20 +110,16 @@ body {
     padding-bottom: 10px;
     margin-bottom: 28px;
 }
-
 .separador {
     border: none;
     border-top: 1px solid #d8ded9;
 }
-
-/* ---------- Datos del programa (flex-wrap) ---------- */
 .datos {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     gap: 18px;
 }
-
 .dato {
     flex: 1 1 220px;
     background-color: var(--blanco);
@@ -163,69 +128,55 @@ body {
     padding: 18px;
     box-shadow: var(--sombra);
 }
-
 .dato--destacado {
     border-left-color: var(--dorado);
     background-color: #fffaf0;
 }
-
 .dato__etiqueta {
     font-size: 0.82rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--texto-suave);
 }
-
 .dato__valor {
     margin-top: 6px;
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--verde-oscuro);
 }
-
-/* ---------- Grid de tres columnas ---------- */
 .columnas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
 .bloque {
     background-color: var(--blanco);
     padding: 24px;
     border-radius: 8px;
     box-shadow: var(--sombra);
 }
-
 .bloque--alt {
     background-color: #eef5f2;
 }
-
 .bloque__titulo {
     color: var(--verde);
     margin-bottom: 12px;
 }
-
 .bloque__texto {
     color: var(--texto-suave);
 }
-
-/* ---------- Perfil ---------- */
 .perfil {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 28px;
     align-items: start;
 }
-
 .perfil__texto p {
     margin-bottom: 14px;
 }
-
 .perfil__lista {
     list-style: none;
 }
-
 .perfil__item {
     background-color: var(--blanco);
     border-radius: 6px;
@@ -234,15 +185,12 @@ body {
     border-left: 4px solid var(--dorado);
     box-shadow: var(--sombra);
 }
-
-/* ---------- Contenido con barra lateral ---------- */
 .con-dos-columnas {
     display: grid;
     grid-template-columns: 260px 1fr;
     gap: 28px;
     align-items: start;
 }
-
 .lateral {
     background-color: var(--verde);
     color: var(--blanco);
@@ -251,36 +199,29 @@ body {
     position: sticky;
     top: 20px;
 }
-
 .lateral__titulo {
     margin-bottom: 12px;
 }
-
 .lateral__lista {
     list-style: none;
 }
-
 .lateral__lista li {
     padding: 6px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     font-size: 0.95rem;
 }
-
 .lateral__lista li:last-child {
     border-bottom: none;
 }
-
 .principal__texto {
     margin-bottom: 20px;
 }
-
 .documentos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     list-style: none;
 }
-
 .documento {
     background-color: var(--blanco);
     padding: 18px;
@@ -288,24 +229,19 @@ body {
     border-top: 3px solid var(--verde-claro);
     box-shadow: var(--sombra);
 }
-
 .documento__titulo {
     color: var(--verde-oscuro);
     margin-bottom: 6px;
 }
-
 .documento p {
     font-size: 0.92rem;
     color: var(--texto-suave);
 }
-
-/* ---------- Contacto ---------- */
 .contacto {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
-
 .contacto__datos {
     flex: 1 1 320px;
     background-color: var(--blanco);
@@ -313,16 +249,13 @@ body {
     border-radius: 8px;
     box-shadow: var(--sombra);
 }
-
 .contacto__linea {
     margin-bottom: 16px;
     color: var(--texto-suave);
 }
-
 .contacto__linea strong {
     color: var(--verde);
 }
-
 .contacto__oficial {
     flex: 1 1 320px;
     background: linear-gradient(135deg, var(--verde), var(--verde-claro));
@@ -331,91 +264,65 @@ body {
     border-radius: 8px;
     box-shadow: var(--sombra);
 }
-
 .contacto__titulo {
     margin-bottom: 12px;
 }
-
 .contacto__texto {
     margin-bottom: 20px;
     opacity: 0.95;
 }
-
-/* ---------- Pie de página ---------- */
 .pie {
     background-color: var(--verde-oscuro);
     color: var(--blanco);
     text-align: center;
     padding: 28px 20px;
 }
-
 .pie__linea {
     font-size: 0.92rem;
     opacity: 0.9;
 }
-
 .pie__linea--creditos {
     margin-top: 8px;
     font-size: 0.8rem;
     opacity: 0.6;
 }
-
-/* ---------- Diseño responsivo ---------- */
 @media (max-width: 900px) {
     .columnas {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .perfil {
         grid-template-columns: 1fr;
     }
-
     .con-dos-columnas {
         grid-template-columns: 1fr;
     }
-
     .lateral {
         position: static;
     }
 }
-
 @media (max-width: 600px) {
     .cabecera__titulo {
         font-size: 1.9rem;
     }
-
     .seccion__titulo {
         font-size: 1.5rem;
     }
-
     .columnas {
         grid-template-columns: 1fr;
     }
-
     .documentos {
         grid-template-columns: 1fr;
     }
-
     .menu__lista {
         flex-direction: column;
     }
 }
-
-/* ================================================
-   Mejoras visuales
-   ================================================ */
-
-/* Navegación con desplazamiento suave */
 html {
     scroll-behavior: smooth;
 }
-
-/* Compensa el salto de las anclas bajo la cabecera */
 .seccion {
     scroll-margin-top: 20px;
 }
-
-/* Portada con mayor impacto visual */
 .portada {
     position: relative;
     padding: 70px 20px;
@@ -425,13 +332,10 @@ html {
         linear-gradient(135deg, var(--verde-oscuro), #0a2b21);
     border-bottom: 5px solid var(--dorado);
 }
-
 .portada__texto {
     font-size: 1.3rem;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
-
-/* Tarjetas con elevacion al pasar el cursor */
 .dato,
 .bloque,
 .documento,
@@ -440,7 +344,6 @@ html {
 .contacto__oficial {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .dato:hover,
 .bloque:hover,
 .documento:hover,
@@ -448,13 +351,10 @@ html {
     transform: translateY(-6px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
-
-/* Franja superior con animacion de carga */
 .cabecera {
     position: relative;
     overflow: hidden;
 }
-
 .cabecera::after {
     content: "";
     position: absolute;
@@ -464,14 +364,11 @@ html {
     height: 5px;
     background: linear-gradient(90deg, var(--dorado), var(--verde-claro), var(--dorado));
 }
-
-/* Titulos con mejor tipografia */
 .seccion__titulo {
     position: relative;
     padding-left: 16px;
     letter-spacing: 0.5px;
 }
-
 .seccion__titulo::before {
     content: "";
     position: absolute;
@@ -482,18 +379,12 @@ html {
     background: var(--verde-claro);
     border-radius: 3px;
 }
-
-/* Resaltado del dato principal */
 .dato--destacado {
     box-shadow: 0 6px 18px rgba(212, 160, 23, 0.28);
 }
-
-/* Barra lateral con sombra mas marcada */
 .lateral {
     box-shadow: 0 8px 20px rgba(16, 61, 48, 0.35);
 }
-
-/* Pie con detalle superior */
 .pie {
     border-top: 4px solid var(--dorado);
 }
